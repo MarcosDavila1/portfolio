@@ -1,0 +1,19 @@
+.containerHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+.containerHome h1{
+    color: #fff;
+    font-weight: 900;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.containerHome h3{
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+}
