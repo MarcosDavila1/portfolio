@@ -8,10 +8,10 @@ import About from './components/About';
 function App() {
   return (
     <div className="App">
-      <Route path={'/'} component={LeftSideBar}/>
-      <Route exact path={'/'} component={Home}/>
-      <Route exact path={'/about'} component={About}/>
-      <Route path={'/'} component={RightSideBar}/>
+      <Route path='/' component={LeftSideBar} />
+      <Route exact path='/' component={Home} />
+      <Route exact path='/about' component={About} />
+      <Route path='/' component={RightSideBar} />
     </div>
   );
 }
