@@ -1,0 +1,22 @@
+.containerSkills{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem 10rem;
+}
+.containerSkills img{
+    width: 5rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 10px rgb(44, 44, 44);
+    transition: 0.4s;
+}
+.containerSkills img:hover{
+    position: relative;
+    transform: translateY(-2rem);
+    transition: 0.4s;
+}
