@@ -1,16 +1,99 @@
-.swiperContainer{
-    background-color: aqua;
+.mySwiper{
     display: flex;
+    height: 100vh;
+    width: 85%;
+    margin: 0 5rem;
+}
+
+.slideContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContent{
+    background-color: rgba(50, 50, 50, 0.8);
+    border-radius: 2rem;
+    width: 95%;
+    position: absolute;
+    top: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+.textContent h1, p{
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.textContent h1{
+    font-weight: 900;
 }
 
 .imgProject{
-    width: 70%;
+    border-radius: 1rem;
+    width: 90%;
 }
 
+.linkVisit{
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
 
-.h1{
-    position: absolute;
-    z-index: 10;
-    color: aqua;
-    font-size: 3rem;
+.linkVisit:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.linkVisit:hover:after {
+  transform: translate(0, 0);
+}
+
+.linkVisit:active {
+  background-color: #ffdeda;
+  outline: 0;
+}
+
+.linkVisit:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .linkVisit {
+    padding: 0 40px;
+  }
 }
