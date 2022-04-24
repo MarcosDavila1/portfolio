@@ -1,0 +1,16 @@
+.swiperContainer{
+    background-color: aqua;
+    display: flex;
+}
+
+.imgProject{
+    width: 70%;
+}
+
+
+.h1{
+    position: absolute;
+    z-index: 10;
+    color: aqua;
+    font-size: 3rem;
+}
