@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
-import { Link } from 'react-router-dom';
+import { Fade } from "react-awesome-reveal";
 import appclima from '../images/appclima.png'
 import blogcafe from '../images/blogcafe.png'
 import countrys from '../images/countrys.png'
