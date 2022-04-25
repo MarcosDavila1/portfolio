@@ -52,6 +52,8 @@ function Contact() {
             <p>+549 3435451046</p>
             <h3>Email</h3>
             <p>marcos.duarte242@gmail.com</p>
+            <h3>Location</h3>
+            <p>Argentina</p>
             <h2>Others</h2>
             <h3>Languages</h3>
             <p>English - C1, Spanish - Fluent, Portuguese - Fluent</p>
