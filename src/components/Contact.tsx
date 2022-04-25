@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/contact.css'
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 interface inputs {
     user_name: string,
@@ -28,12 +30,16 @@ function Contact() {
     function sendEmail(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
         input.user_name === '' || input.user_email === '' || input.user_message === ''
-            ? alert('Please fill out all fields')
+            ? toast.error("All fields are required")
             : /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(input.user_email)
                 ? emailjs.sendForm('service_zi0n822', 'template_tqx8ram', e.currentTarget, 'rwvuPTyBOE1OgEzRP')
-                    .then(res => console.log('Email successfully sent!'))
-                    .catch(err => console.log('Email failed to send!'))
-                : alert('mal papa')
+                    .then(res => (toast.success("Email sent successfully"), setInput({
+                        user_name: '',
+                        user_email: '',
+                        user_message: ''}
+                    )))
+                    .catch(err => toast.error("Something went wrong"))
+                : toast.error("Invalid email")
             
             
     }
@@ -62,18 +68,19 @@ function Contact() {
         <div className='containerForm'>
             <h2>Contact Form</h2>
             <form className='form' onSubmit={sendEmail}>
-                <label>Name*</label>
+                <label>Name<span>*</span></label>
                 <input placeholder='Your name' name='user_name' value={input.user_name} onChange={handleChange}/>
 
-                <label>Email*</label>
+                <label>Email<span>*</span></label>
                 <input placeholder='Your email' name='user_email' value={input.user_email} onChange={handleChange}/>
 
-                <label>Message*</label>
+                <label>Message<span>*</span></label>
                 <textarea rows={1} placeholder='Type your message here' name='user_message' value={input.user_message} onChange={handleChange}/>
 
                 <button type='submit'>Send Message</button>
             </form>
         </div>
+        <ToastContainer />
     </div>
   )
 }
