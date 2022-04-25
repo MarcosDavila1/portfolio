@@ -1,7 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/contact.css'
+import emailjs from '@emailjs/browser';
+
+interface inputs {
+    user_name: string,
+    user_email: string,
+    user_message: string
+} 
 
 function Contact() {
+
+    const [input, setInput] = useState<inputs>({
+        user_name: '',
+        user_email: '',
+        user_message: ''
+    })
+
+    function handleChange(e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) {
+        const { name, value } = e.target;
+        setInput({
+            ...input,
+            [name]: value
+        })
+    }
+    
+
+    function sendEmail(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault()
+        input.user_name === '' || input.user_email === '' || input.user_message === ''
+            ? alert('Please fill out all fields')
+            : /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(input.user_email)
+                ? emailjs.sendForm('service_zi0n822', 'template_tqx8ram', e.currentTarget, 'rwvuPTyBOE1OgEzRP')
+                    .then(res => console.log('Email successfully sent!'))
+                    .catch(err => console.log('Email failed to send!'))
+                : alert('mal papa')
+            
+            
+    }
+    
   return (
     <div className='containerContact'>
         <div className='containerInfo'>
@@ -25,15 +61,15 @@ function Contact() {
 
         <div className='containerForm'>
             <h2>Contact Form</h2>
-            <form className='form'>
+            <form className='form' onSubmit={sendEmail}>
                 <label>Name*</label>
-                <input placeholder='Your name'/>
+                <input placeholder='Your name' name='user_name' value={input.user_name} onChange={handleChange}/>
 
                 <label>Email*</label>
-                <input placeholder='Your email'/>
+                <input placeholder='Your email' name='user_email' value={input.user_email} onChange={handleChange}/>
 
                 <label>Message*</label>
-                <textarea rows={1} placeholder='Type your message here'/>
+                <textarea rows={1} placeholder='Type your message here' name='user_message' value={input.user_message} onChange={handleChange}/>
 
                 <button type='submit'>Send Message</button>
             </form>
