@@ -36,7 +36,7 @@ function About() {
         <div className='containerBtnAbout'>
           <Fade>
             <button><Link to='/contact'>Contact Me</Link></button>
-            <button><a href='https://drive.google.com/file/d/1RKSlhSnhxHnxuTtXBYFsLP4oTmPajhmm/view?usp=sharing' target='_blank'>Download CV</a></button>
+            <button><a href='https://drive.google.com/file/d/1RKSlhSnhxHnxuTtXBYFsLP4oTmPajhmm/view?usp=sharing' target='_blank' rel='noreferrer'>Download CV</a></button>
           </Fade>
         </div>
       </div>

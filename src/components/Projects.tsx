@@ -11,7 +11,7 @@ interface Props {
   projects: Array<{
     name: string,
     url: string,
-    image: string,
+    image: string, 
   }>
 }
 
@@ -30,7 +30,7 @@ function Projects({projects}: Props) {
           <div className='textContent'>
               <Fade>
                   <h1>{project.name}</h1>
-                  <a href={project.url} target='_blank' className='linkVisit'>Visit</a>
+                  <a href={project.url} target='_blank' rel='noreferrer' className='linkVisit'>Visit</a>
               </Fade>
           </div>
           <img className='imgProject' src={project.image} alt='zooperTrivia'/>

@@ -34,11 +34,11 @@ function Contact() {
             ? toast.error("All fields are required")
             : /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(input.user_email)
                 ? emailjs.sendForm('service_zi0n822', 'template_tqx8ram', e.currentTarget, 'rwvuPTyBOE1OgEzRP')
-                    .then(res => (toast.success("Email sent successfully"), setInput({
+                    .then(res => {return (toast.success("Email sent successfully"), setInput({
                         user_name: '',
                         user_email: '',
                         user_message: ''}
-                    )))
+                    ))})
                     .catch(err => toast.error("Something went wrong"))
                 : toast.error("Invalid email")
             
@@ -64,7 +64,6 @@ function Contact() {
                     React, Redux, Node, Express, Firebase, Javascript, 
                     Typescript, MongoDB, PostgreSql, Sequelize, Css, Git
                 </p>
-                <h3></h3>
                 <h3>Willing to Relocate</h3>
                 <p>Yes</p>
             </Fade>
