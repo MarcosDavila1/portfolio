@@ -52,8 +52,10 @@
 .form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 80%;
     padding: 1rem;
+    margin: 0;
 }
 .form label{
     color: rgb(173, 173, 173);

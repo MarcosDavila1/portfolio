@@ -3,6 +3,7 @@ import '../styles/contact.css'
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Fade } from "react-awesome-reveal";
 
 interface inputs {
     user_name: string,
@@ -47,24 +48,26 @@ function Contact() {
   return (
     <div className='containerContact'>
         <div className='containerInfo'>
-            <h2>Contact</h2>
-            <h3>Phone</h3>
-            <p>+549 3435451046</p>
-            <h3>Email</h3>
-            <p>marcos.duarte242@gmail.com</p>
-            <h3>Location</h3>
-            <p>Argentina</p>
-            <h2>Others</h2>
-            <h3>Languages</h3>
-            <p>English - C1, Spanish - Fluent, Portuguese - Fluent</p>
-            <h3>Tech Skills</h3>
-            <p>
-                React, Redux, Node, Express, Firebase, Javascript, 
-                Typescript, MongoDB, PostgreSql, Sequelize, Css, Git
-            </p>
-            <h3></h3>
-            <h3>Willing to Relocate</h3>
-            <p>Yes</p>
+            <Fade>
+                <h2>Contact</h2>
+                <h3>Phone</h3>
+                <p>+549 3435451046</p>
+                <h3>Email</h3>
+                <p>marcos.duarte242@gmail.com</p>
+                <h3>Location</h3>
+                <p>Argentina</p>
+                <h2>Others</h2>
+                <h3>Languages</h3>
+                <p>English - C1, Spanish - Fluent, Portuguese - Fluent</p>
+                <h3>Tech Skills</h3>
+                <p>
+                    React, Redux, Node, Express, Firebase, Javascript, 
+                    Typescript, MongoDB, PostgreSql, Sequelize, Css, Git
+                </p>
+                <h3></h3>
+                <h3>Willing to Relocate</h3>
+                <p>Yes</p>
+            </Fade>
         </div>
 
         <div className='containerForm'>
