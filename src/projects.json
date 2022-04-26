@@ -1,0 +1,37 @@
+[
+    {
+        "name": "ZOOPER TRIVIA",
+        "url": "https://www.zoopertrivia.com/",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/zooper.webp?alt=media&token=53749cd4-b15c-4afc-9934-9e1d343b5863"
+    },
+    {
+        "name": "FAST TASKS",
+        "url": "https://fasttasks.netlify.app/",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/taskapp.webp?alt=media&token=07d0518d-6325-4794-a0c4-710975ef8832"
+    },
+    {
+        "name": "ECOMMERCE",
+        "url": "https://github.com/MarcosDavila1/productspage",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/ecommerce.webp?alt=media&token=483bc04a-324a-4979-bcf2-7178f21f2384"
+    },
+    {
+        "name": "COUNTRY APP",
+        "url": "https://github.com/MarcosDavila1/PI-Country",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/countrys_1.webp?alt=media&token=73059d01-ff76-4b0b-806c-aed43809b760"
+    },
+    {
+        "name": "TESLA",
+        "url": "https://github.com/MarcosDavila1/Tesla-Page",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/tesla.webp?alt=media&token=5b7019b0-3526-4d9f-9f9b-c0036e76589e"
+    },
+    {
+        "name": "WEATHER APP",
+        "url": "https://github.com/MarcosDavila1/App-Clima",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/appclima.webp?alt=media&token=0d563c76-f9fc-4c0d-ae13-4c775dba63a0"
+    },
+    {
+        "name": "BLOG CAFE",
+        "url": "https://github.com/MarcosDavila1",
+        "image": "https://firebasestorage.googleapis.com/v0/b/carreradementes-93f01.appspot.com/o/blogcafe.webp?alt=media&token=5ee3f485-87b5-4288-8a83-2a48f6bdb0f6"
+    }
+]
