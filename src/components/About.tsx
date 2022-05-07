@@ -19,18 +19,18 @@ function About() {
         <Fade>
           <h1>About Me</h1>
           <p>
-            Since I was a kid, I was into technology and games. 
-            How fast the technolgies world changes is what 
-            I liked the most and encouraged me to continue learning everyday in order 
-            to be always up to date with the latest technologies, projects and news. 
+            Nice to meet you! Mi name is Marcos, I'm from Argentina and I'm currently 
+            studying Computer Science at Harvard University. Also I have a Diploma in 
+            Software Development at Henry's Bootcamp.<br/>
+            I have been developing in the area of Full Stack Web Development for 1 year, 
+            with an specialization in the Javascript/Typescript libraries as 
+            React - React Native - Nodejs. Also I have taken different courses about 
+            the latest technologies in Udemy and Edx. 
           </p>
           <p>
-            I developed all my skills at Henry Bootcamp and at Udemy. 
-            I learned and upgraded my abilities in Javascript, React, Redux, NodeJs, 
-            Express, GIT, Firebase, Socket.io, Css and plenty of other soft skills, 
-            while I worked in different projects. 
-            Also I have experience working with agile methodologies as Scrum.
-            I am currently improving my competencies in Typescript and Amazon Web Services. 
+            Currently, I'm working in the freelance market as a Full Stack Developer 
+            while studying Computer Science at Harvard University.<br/>
+            I'm available at DM for any doubts or proposal 
           </p>
         </Fade>
         <div className='containerBtnAbout'>
