@@ -6,16 +6,14 @@
     align-items: center;
     width: 10%;
 }
-.containerLeftSideBar a{
+.mdLogo{
     text-decoration: none;
-}
-.containerLeftSideBar h1{
     color: #fff;
     font-weight: 900;
     font-size: 2rem;
     margin: 2rem 0;
 }
-.containerLeftSideBar h1:hover{
+.mdLogo:hover{
     cursor: pointer;
 }
 
